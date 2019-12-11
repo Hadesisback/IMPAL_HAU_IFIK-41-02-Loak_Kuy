@@ -222,3 +222,4 @@ if (count($sliderProducts) > 0) {
         </div>
     <?php } ?>
 </div>
+

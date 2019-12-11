@@ -52,27 +52,6 @@
                             </form> 
                         </div>
                     </div>
-                <?php } ?>
-                <div id="languages-bar">
-                    <div class="container">
-                        <?php
-                        $num_langs = count($allLanguages);
-                        if ($num_langs > 0) {
-                            ?>
-                            <ul class="pull-left">
-                                <?php
-                                $i = 1;
-                                $lang_last = '';
-                                foreach ($allLanguages as $key_lang => $lang) {
-                                    ?>
-                                    <li <?= $i == $num_langs ? 'class="last-item"' : '' ?>>
-                                        <img src="<?= base_url('attachments/lang_flags/' . $lang['flag']) ?>" alt="Language-<?= MY_LANGUAGE_ABBR ?>"><a href="<?= base_url($key_lang) ?>"><?= $lang['name'] ?></a>
-                                    </li>
-                                    <?php
-                                    $i++;
-                                }
-                                ?>
-                            </ul>
                         <?php } ?>
                         <div class="phone pull-right">
                             <?php
@@ -83,8 +62,6 @@
                                 echo $footerContactPhone;
                             }
                             ?>
-                        </div>
-                    </div>
                 </div>
                 <div id="top-part">
                     <div class="container">
