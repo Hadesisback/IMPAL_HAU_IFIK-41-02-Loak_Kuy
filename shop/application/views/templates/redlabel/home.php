@@ -123,12 +123,12 @@ if (count($sliderProducts) > 0) {
             </div>
             <?php if ($showBrands == 1) { ?>
                 <div class="filter-sidebar">
-                    <div class="title">
+                    <!-- <div class="title">
                         <span><?= lang('brands') ?></span>
                         <?php if (isset($_GET['brand_id']) && $_GET['brand_id'] != '') { ?>
                             <a href="javascript:void(0);" class="clear-filter" data-type-clear="brand_id" data-toggle="tooltip" data-placement="right" title="<?= lang('clear_the_filter') ?>"><i class="fa fa-times" aria-hidden="true"></i></a>
                         <?php } ?>
-                    </div>
+                    </div> -->
                     <ul>
                         <?php foreach ($brands as $brand) { ?>
                             <li>
@@ -156,12 +156,6 @@ if (count($sliderProducts) > 0) {
                 </div>
             <?php } if ($shippingOrder != 0 && $shippingOrder != null) { ?>
                 <div class="filter-sidebar">
-                    <div class="title">
-                        <span><?= lang('freeShippingHeader') ?></span>
-                    </div>
-                    <div class="oaerror info">
-                        <strong><?= lang('promo') ?></strong> - <?= str_replace(array('%price%', '%currency%'), array($shippingOrder, CURRENCY), lang('freeShipping')) ?>!
-                    </div>
                 </div>
             <?php } ?>
         </div>
