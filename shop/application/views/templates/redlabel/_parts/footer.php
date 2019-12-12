@@ -15,18 +15,6 @@
                     </ul>
                 </div>
                 <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6 f-col">
-                    <h3><?= lang('categories') ?></h3>
-                    <?php if (!empty($footerCategories)) { ?>
-                        <ul>
-                            <?php foreach ($footerCategories as $key => $categorie) { ?>
-                                <li><a href="javascript:void(0);" data-categorie-id="<?= $key ?>" class="go-category"><?= $categorie ?></a></li>
-                            <?php } ?>
-                        </ul>
-                    <?php } else { ?>
-                        <p><?= lang('no_categories') ?></p>
-                    <?php } ?>
-                </div>
-                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6 f-col">
                     <h3><?= lang('contacts') ?></h3>
                     <ul class="footer-icon">
                         <?php if ($footerContactAddr != '') { ?>
