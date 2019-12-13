@@ -98,7 +98,7 @@
                                             </form>
                                         </div>
                                     </li>
-                                    <li class="header">ECOMMERCE</li>
+                                    <li class="header">Loak-Kuy</li>
                                     <li><a href="<?= base_url('admin/publish') ?>" <?= urldecode(uri_string()) == 'admin/publish' ? 'class="active"' : '' ?>><i class="fa fa-edit" aria-hidden="true"></i> Publish product</a></li>
                                     <li><a href="<?= base_url('admin/products') ?>" <?= urldecode(uri_string()) == 'admin/products' ? 'class="active"' : '' ?>><i class="fa fa-files-o" aria-hidden="true"></i> Products</a></li>
                                     <?php if ($showBrands == 1) { ?>
